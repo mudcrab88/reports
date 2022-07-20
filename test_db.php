@@ -23,5 +23,5 @@ foreach ($array as $item) {
 $creator = new PdfCreator();
 $reportPdf = new AutoSalesReport('Отчет о продажах автомобилей', $dataArray, $creator);
 $reportPdf->create();
-echo $reportPdf->saveToFile(__DIR__.'/report_from_db.pdf');
+$reportPdf->saveToFile(__DIR__.'/example/report_db.pdf');
 

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace nnkuznetsov\reports\data;
 
 class AutoSalesReportData implements ReportDataInterface

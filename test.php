@@ -41,4 +41,4 @@ foreach ($array as $item) {
 $creator = new PdfCreator();
 $reportPdf = new AutoSalesReport('Отчет о продажах автомобилей', $dataArray, $creator);
 $reportPdf->create();
-$reportPdf->saveToFile(__DIR__.'/report.pdf');
+$reportPdf->saveToFile(__DIR__.'/example/report.pdf');
