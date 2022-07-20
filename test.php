@@ -13,8 +13,8 @@ $array = [
         'engine_volume'  => 1.6,
         'power'          => 114,
         'gearbox_type'   => 'механика',
-        'year'           => 2020,
-        'sale_date'      => '14 июля 2022 года',
+        'year_prod'      => 2020,
+        'sale_date'      => '2022-07-14',
         'dealer'         => 'ООО Дилер'
     ],
     [
@@ -24,8 +24,8 @@ $array = [
         'engine_volume'  => 1.6,
         'power'          => 86,
         'gearbox_type'   => 'механика',
-        'year'           => 2014,
-        'sale_date'      => '15 июля 2022 года',
+        'year_prod'      => 2014,
+        'sale_date'      => '2022-07-15',
         'dealer'         => 'ООО Авто'
     ],
 
@@ -41,4 +41,4 @@ foreach ($array as $item) {
 $creator = new PdfCreator();
 $reportPdf = new AutoSalesReport('Отчет о продажах автомобилей', $dataArray, $creator);
 $reportPdf->create();
-$reportPdf->saveToFile('/home/mudcrab/projects/php/reports/report.pdf');
+$reportPdf->saveToFile(__DIR__.'/report.pdf');

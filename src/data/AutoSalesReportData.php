@@ -9,7 +9,7 @@ class AutoSalesReportData implements ReportDataInterface
     public float  $engine_volume;
     public int    $power;
     public string $gearbox_type;
-    public int    $year;
+    public int    $year_prod;
     public string $sale_date;
     public string $dealer;
 
@@ -29,7 +29,7 @@ class AutoSalesReportData implements ReportDataInterface
             'engine_volume'  => 'Объем двигателя',
             'power'          => 'Мощность двигателя',
             'gearbox_type'   => 'Коробка передач',
-            'year'           => 'Год выпуска',
+            'year_prod'      => 'Год выпуска',
             'sale_date'      => 'Дата продажи',
             'dealer'         => 'Дилер'
         ];

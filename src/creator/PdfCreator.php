@@ -36,7 +36,7 @@ class PdfCreator implements CreatorInterface
         $this->pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
 
         $this->pdf->SetAutoPageBreak(true, PDF_MARGIN_BOTTOM);
-        $this->pdf->SetFont('dejavusans', '', 14, '', true);
+        $this->pdf->SetFont('dejavusans', '', 12, '', true);
         $this->pdf->AddPage();
     }
 
@@ -54,7 +54,7 @@ class PdfCreator implements CreatorInterface
 
     protected function createTable(array $data): string
     {
-        $this->pdf->SetFont('dejavusans', '', 10, '', true);
+        $this->pdf->SetFont('dejavusans', '', 8, '', true);
         $table = '<table border="1">';
 
         $table .= '<tr>';
